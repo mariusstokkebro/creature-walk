@@ -8,6 +8,7 @@ void setup(){
   posy = 0;
   posx = 0;
   creature = createShape(GROUP);
+  
   //BODYPARTS
   head = createShape(ELLIPSE, 110,190,50,60);
   head.setFill(color(200,150,3));
@@ -25,7 +26,6 @@ void setup(){
 } 
 void draw(){
    creature.translate(posx,posy);
-
    //shapes
    clear();
 
@@ -49,8 +49,6 @@ void draw(){
          drawCreature(10,-0,1.6);
           drawCreature(250,-0,0.97);
            drawCreature(130,-0,1.02);
-           
-           
 }
 void drawCreature(float posx,float posy,float scale){
     creature.scale(scale);
