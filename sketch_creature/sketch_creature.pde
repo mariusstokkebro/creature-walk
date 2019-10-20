@@ -25,11 +25,10 @@ void setup(){
  creature.addChild(eye);
 } 
 void draw(){
+  
    creature.translate(posx,posy);
    //shapes
    clear();
-
-
    if(posy == 30){
    posx = 30;
    posy = -10;
